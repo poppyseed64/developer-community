@@ -36,15 +36,17 @@ const Register = ({setAlert,register,isAuthenticated}) => {
         //        password:""
         // })
 
-         //redirect to dashboad after REGISTER sucess
-         if(isAuthenticated){
-            return <Redirect to="/dashboard"/>
-        }
+      
 
        
         }
 
     };
+
+       //redirect to dashboad after REGISTER sucess
+       if(isAuthenticated){
+        return <Redirect to="/dashboard"/>
+    }
     return (
         <Fragment>
              <h1 className="large text-primary">Sign Up</h1>
