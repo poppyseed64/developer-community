@@ -22,22 +22,19 @@ import {login } from "../../action/auth"
         login({email,password});
          
         
-        //redirect to dashboad after login sucess
-        if(isAuthenticated){
-            console.log(isAuthenticated);
-       
-        //   function re(){
-        //     history.push("/dashboard")
- 
-        //  }
-      
-        //  return re()
-        return <Redirect push to='/dashboard'/>
-        }
-       
 
-       
+    }
+            //redirect to dashboad after login sucess
+    if(isAuthenticated){
+        console.log(isAuthenticated);
+   
+    //   function re(){
+    //     history.push("/dashboard")
 
+    //  }
+  
+    //  return re()
+    return <Redirect push to='/dashboard'/>
     }
     return (
         <Fragment>
